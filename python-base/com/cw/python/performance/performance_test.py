@@ -4,6 +4,7 @@ import threading,datetime,time,queue,requests
 
 que = queue.Queue() #函数执行结果池
 
+
 def call_service():     #调用服务
     res = requests.post(url, data={'data':file})
     que.put(res.text)
@@ -15,7 +16,7 @@ def thread_space(threadnum):
         single_t = threading.Thread(target=call_service) #装载线程
         threads.append(single_t)
 
-    starttime = datetime.datetime.now()    #标记开始时间
+    start_time = datetime.datetime.now()    #标记开始时间
 
     for th in threads:
         th.setDaemon(True)  #设置守护
@@ -23,8 +24,8 @@ def thread_space(threadnum):
         th.start()         #启动进程
     th.join()
 
-    finishtime = datetime.datetime.now()    #结束时间
-    return finishtime - starttime  #返回标记的时间间隔
+    finish_time = datetime.datetime.now()    #结束时间
+    return finish_time - start_time  #返回标记的时间间隔
 
 
 def test_process(threadnum):
@@ -36,15 +37,17 @@ def test_process(threadnum):
 
 #    while not q.empty():
 #        result.append(q.get())
-    return (testvalue,result)
+    return (testvalue, result)
 
-def write_file(data,count):
+
+def write_file(data, count):
     data = str(data)
     count = str(count)
     file_url = 'D:/logs/F5Test/log.txt'
     fp = open(file_url, 'a')
     fp.write(data + ' timer:' + count + '\n')
     fp.close
+
 
 count = 300
 threadnum = 1
