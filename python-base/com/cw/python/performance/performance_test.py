@@ -1,6 +1,10 @@
 #! /usr/bin/env python
 #coding=utf-8
-import threading,datetime,time,queue,requests
+import threading
+import datetime
+import time
+import queue
+import requests
 
 que = queue.Queue() #函数执行结果池
 
