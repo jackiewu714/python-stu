@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # 下载war包并发布shell脚本
 
 tomcat_home=/home/apache-tomcat-8.5.15
