@@ -19,7 +19,10 @@ def search_del_dir(rootdir, search_dir_name):
 
 
 # 删除target目录
-search_del_dir("C:/work/code-gitlab/TJH-CORE/bms-core", "target")
-search_del_dir("C:/work/code-gitlab/TJH-GWT2.8.2", "target")
-search_del_dir("C:/work/code-gitlab/ZJYYXM-OLD", "target")
+search_del_dir("C:/work/code-hec-gitlab/TJH-CORE/bms-core", "target")
+search_del_dir("C:/work/code-hec-gitlab/TJH-GWT2.8.2", "target")
+search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-OLD", "target")
+search_del_dir("C:/work/code-hec-gitlab/ZJYYXM", "target")
+search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-CORE", "target")
 search_del_dir("C:/work/code", "target")
+search_del_dir("C:/work/code-hep-gitlab/hydrogen", "target")
