@@ -54,6 +54,7 @@ search_del_dir("C:/work/code-hec-gitlab/TJXN", "target")
 search_del_dir("C:/work/code-hec-gitlab/GSSFY", "target")
 search_del_dir("C:/work/code-hec-gitlab/LYG", "target")
 search_del_dir("C:/work/code-hec-gitlab/DLRM", "target")
+search_del_dir("C:/work/code-hec-gitlab/SYTH", "target")
 search_del_dir("C:/work/code", "target")
 search_del_dir("C:/work/code-hep-gitlab/hydrogen", "target")
 
