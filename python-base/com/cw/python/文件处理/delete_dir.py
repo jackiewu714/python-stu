@@ -2,6 +2,8 @@ import os
 import shutil
 import logging
 
+from builtins import Exception, str, len
+from reprlib import repr
 
 # 查找根目录下指定名称的目录及其子目录下所有文件
 def search_del_dir(rootdir, search_dir_name):
