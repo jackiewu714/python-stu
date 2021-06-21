@@ -21,6 +21,8 @@ def search_del_dir(rootdir, search_dir_name):
                     print("ERROR：deleting dir: " + path + ", exception:" + repr(e))
                     logging.exception(e)
             else:
+                # path = os.path.join(rootdir, dir)
+                # print("loop path: " + path)
                 search_del_dir(os.path.join(rootdir, dir), search_dir_name)
     else:
         # print(rootdir + " is not a directory")
@@ -45,18 +47,26 @@ def os_del_file(path):
 
 
 # 删除target目录
-search_del_dir("C:/work/code-hec-gitlab/TJH", "target")
-search_del_dir("C:/work/code-hec-gitlab/TJH-CORE", "target")
-search_del_dir("C:/work/code-hec-gitlab/TJH-GWT2.8.2", "target")
-search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-OLD", "target")
-search_del_dir("C:/work/code-hec-gitlab/ZJYYXM", "target")
-search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-CORE", "target")
-search_del_dir("C:/work/code-hec-gitlab/LZSFY", "target")
-search_del_dir("C:/work/code-hec-gitlab/TJXN", "target")
-search_del_dir("C:/work/code-hec-gitlab/GSSFY", "target")
-search_del_dir("C:/work/code-hec-gitlab/LYG", "target")
-search_del_dir("C:/work/code-hec-gitlab/DLRM", "target")
-search_del_dir("C:/work/code-hec-gitlab/SYTH", "target")
-search_del_dir("C:/work/code", "target")
-search_del_dir("C:/work/code-hep-gitlab/hydrogen", "target")
+# search_del_dir("C:/work/code-hec-gitlab/TJH", "target")
+# search_del_dir("C:/work/code-hec-gitlab/TJH-CORE", "target")
+# search_del_dir("C:/work/code-hec-gitlab/TJH-GWT2.8.2", "target")
+# search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-OLD", "target")
+# search_del_dir("C:/work/code-hec-gitlab/ZJYYXM", "target")
+# search_del_dir("C:/work/code-hec-gitlab/ZJYYXM-CORE", "target")
+# search_del_dir("C:/work/code-hec-gitlab/LZSFY", "target")
+# search_del_dir("C:/work/code-hec-gitlab/TJXN", "target")
+# search_del_dir("C:/work/code-hec-gitlab/GSSFY", "target")
+# search_del_dir("C:/work/code-hec-gitlab/LYG", "target")
+# search_del_dir("C:/work/code-hec-gitlab/DLRM", "target")
+# search_del_dir("C:/work/code-hec-gitlab/SYTH", "target")
+# search_del_dir("C:/work/code-hec-gitlab/GZSRM", "target")
+# search_del_dir("C:/work/code-hec-gitlab/ZGYGT", "target")
+# search_del_dir("C:/work/code-hec-gitlab/YXRM", "target")
+# search_del_dir("C:/work/code-hec-gitlab/QJZYY", "target")
+# search_del_dir("C:/work/code-hec-gitlab/HBHAHIS", "target")
+# search_del_dir("C:/work/code", "target")
+# search_del_dir("C:/work/code-hep-gitlab/hydrogen", "target")
+
+
+search_del_dir("C:/work/code-hec-gitlab", "target")
 
